@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria do Vini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="barra-navegação" id="navegação" onmouseover="hover(0)" onmouseout="hover(1)">
+        <div class="logo home">
+            <h1 class="oculto" id="h1">Recanto da Pizza</h1>
+        </div>
+        <div class="lista-menu">
+            <ul id="lista1">
+                <li>
+                    <a href="#">Cardápio</a>
+                </li>
+                <li>
+                    <a href="">Pedidos</a>
+                </li>
+                <li>
+                    <a href="">Sobre</a>
+                </li>
+            </ul>
+        </div>
+        <div class="home">
+        <button type="button" onclick="clicado()" id="botão1">
+            Menu
+        </button>
+        </div>
+    </nav>
+
+    <div class="content oculto" id="collapse" onmouseover="hover(2)" onmouseout="hover(3)">
+        <ul>
+            <li>
+                <a href="#">Cardápio</a>
+            </li>
+            <li>
+                <a href="">Pedidos</a>
+            </li>
+            <li>
+                <a href="">Sobre nós</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="conteudo-principal">
+        <p id="restaurante">
+            Recanto da Pizza
+        </p>
+        <button id="reserva">
+            Faça sua reserva
+        </button>
+    </div>
+
+    <div id="funcionamento">
+        <h1 id="horario">Aberto das 18h às 23h</h1>
+    </div>
+
+    <div class="cardápio">
+        <h1 class="titulo-cardapio">CARDÁPIO</h1>
+        <div class="botões">
+            <button id="btn1" class="cardápio-botão active" onclick="cardapio(1)">Pizzas</button>
+            <button id="btn2" class="cardápio-botão" onclick="cardapio(2)">Pizzas Doces</button>
+            <button id="btn3" class="cardápio-botão" onclick="cardapio(3)">Massas & lasanhas</button>
+        </div>
+        <div id="cardápio">
+            <div id="conteudo-cardapio">
+                <h1>Frango<span>R$ 35,90</span></h1>
+                <p>Catupiry, Frango e Tomate</p>
+                
+                <h1>Calabresa<span>R$ 30,90</span></h1>
+                <p>Muçarela, Calabresa, Cebola e Tomate</p>
+                
+                <h1>4 Queijos<span>R$ 32,90</span></h1>
+                <p>Muçarela, Provolone, Catupiry e Gorgonzola</p>
+                
+                <h1>Filet Mignon<span>R$ 42,90</span></h1>
+                <p>Muçarela, Filet e Cebola</p>
+                
+                <h1>Portuguesa<span>R$ 34,90</span></h1>
+                <p>Muçarela, Polpa de Tomate, Cebola e Azeitonas</p>
+                
+                <h1>Napolitana<span>R$ 30,90</span></h1>
+                <p>Muçarela, Manjericão e Tomate</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sobre">
+        <h1 class="titulo-cardapio">SOBRE NÓS</h1>
+        <p class="parágrafo">A pizzaria Recanto da Pizza foi criada em outubro de 2020 e é uma Pizzaria fictícia, criada por Vinícius Tavares da Silva
+            com fins de aprendizado. Para a criação do projeto foram utilizadas as linguagens de HTML E CSS (puro), além de Javascript.
+        </p>
+        <div class="div-interna">
+            <img class="img" src="foto-3.jpg" alt="" srcset="">
+        </div>
+    </div>
+
+    <div class="rodape">
+        <a href="https://github.com/Viniciusilvainfo">Conheça meu Github</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

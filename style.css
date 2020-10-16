@@ -1,0 +1,274 @@
+/* básico */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+body {
+    background-image: url('pizza-fundo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+::selection {
+    background-color: red;
+}
+
+/* barra de nevagação */
+.barra-navegação {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    opacity: 0.6;
+    height: 5em;
+}
+
+li>a:hover,
+#reserva:hover,.rodape>a:hover {
+    color: green;
+}
+
+.lista-menu, .home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-shadow: 1px 2px black;
+}
+
+.home {
+    width: 29%;
+}
+
+.lista-menu {
+    width: 42%;
+}
+
+#lista1 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    /* min-width ocupa 100% do elemento pai */
+    min-width: 100%;
+    height: 100%;
+}
+
+#botão1 {
+    display: none;
+    background-color: white;
+    border-radius: 1em;
+    width: 10vw;
+    height: 5vh;
+    cursor: pointer;
+}
+
+#botão1:hover {
+    background-color: #ccc;
+}
+
+.oculto {
+    display: none;
+}
+
+.visivel {
+    display: block;
+}
+
+.content {
+    padding: 1vh 0vw 8vh 5vw;
+    max-height: 10px;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.opacidade {
+    opacity: 0.8;
+}
+
+a:nth-child(1) {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+#lista1 li {
+    align-self: center;
+    text-align: center;
+    min-width: 33%;
+}
+
+/* conteudo principal */
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 25vh 25vw 6vh 25vw;
+    height: 50vh;
+    text-shadow: 1px 2px black;
+}
+
+.conteudo-principal>p {
+    text-align: center;
+}
+
+#restaurante {
+    font-size: 8vw;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#reserva {
+    display: block;
+    width: 80%;
+    margin: 5vh 0 0 0;
+    background-color: black;
+    color: white;
+    border: none;
+    height: 3em;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+/* funcionamento */
+#funcionamento {
+    color: white;
+    font-size: 0.8em;
+    margin: 0 0 3vh 0;
+    padding: 6vh 0 0 0;
+}
+
+#horario {
+    background-color: black;
+    display: inline;
+    padding: 0.5em;
+}
+
+/* cardápio */
+.cardápio {
+    background-color: black;
+    color: white;
+    margin-top: 8vh;
+    border: 1px solid black;
+}
+
+.sobre {
+    background-color: #B8860B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.parágrafo {
+    padding: 0 2em;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.img {
+    width: 60vw;
+}
+
+.div-interna {
+    margin: 1em 20vw;
+}
+
+.titulo-cardapio {
+    font-size: 5vw;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+.botões {
+    display: flex;
+    flex-direction: row;
+    margin: 1em 14vw 0 14vw;
+}
+
+.rodape {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+#cardápio {
+    display: block;
+    background-color: white;
+    color: black;
+    margin: 0em 14vw 8em 14vw;
+    padding: 1em;
+}
+
+#cardápio p {
+    margin-bottom: 1em;
+    padding: 1.2em;
+}
+
+span {
+    float: right;
+}
+
+.cardápio-botão {
+    background-color: black;
+    border: 1px solid white;
+    width: 24vw;
+    height: 3em;
+    font-size: 1.5em;
+    color: white;
+}
+
+.active {
+    background-color: red;
+}
+
+.cardápio-botão:hover {
+    background-color: red;
+}
+
+/* media queries */
+@media (max-width:768px) {
+    .logo {
+        width: 66%;
+    }
+    .lista-menu {
+        display: none;
+    }
+    #botão1 {
+        display: block;
+    }
+    #h1 {
+        display: flex;
+        margin-left: 10px;
+    }
+    #restaurante {
+        font-size: 10vw;
+    }
+    .conteudo-principal {
+        height: 40vh;
+    }
+    #titulo-cardapio {
+        font-size: 6vw;
+    }
+    .cardápio button {
+        width: 32em;
+        font-size: 1em;
+    }
+    .botões{
+        margin: 0 1em;
+    }
+    #cardápio {
+        margin: 0 1em 4em 1em;
+    }
+}
